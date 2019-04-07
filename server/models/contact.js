@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+//<!--Abdul Shukor:ID 300919831-->
 
 // create a model class
 let contactSchema = mongoose.Schema({

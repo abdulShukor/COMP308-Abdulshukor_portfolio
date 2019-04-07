@@ -1,4 +1,6 @@
 // require modules for our User Model
+//    <!--Abdul Shukor:ID 300919831-->
+
 let mongoose = require("mongoose");
 let passportLocalMongoose = require("passport-local-mongoose");
 

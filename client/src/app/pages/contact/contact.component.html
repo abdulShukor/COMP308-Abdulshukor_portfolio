@@ -1,30 +1,141 @@
 <!--Abdul Shukor
    StudentID300919831
    Date:2019-03-30-->
-<!--Abdul Shukor
-   StudentID300919831
-   Date:2019-03-30-->
-   <div class="container">
-      <div class="jumbotron">
+<div class="container">
+  <div class="jumbotron">
+    <div class="card " style="width: 800px; margin: center">
+      <div class="card-header text-center text-white bg-dark">
+        <h5>Contact Information</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+            <h5>Name:</h5>
+            <h5>Cellphone:</h5>
+            <h5>Email:</h5>
+            <h5>Address:</h5>
+          </div>
+          <div class="col" style="padding-right: 12rem">
+            <h5>Abdul Shukor</h5>
+            <h5>(416)-456-4101</h5>
+            <h5>ashukor12@gmail.com</h5>
+            <h5>Toronto/Canada</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
 
-         <i class="fa fa-map-marker fa-2x"></i><p>Toronto,Canada</p>
-          <i class="fa fa-phone  fa-2x"></i> <p>+ 416-456-4101</p>
-          <i class="fa fa-envelope fa-2x"></i> <p>ashukoor12@gmail.com</p>
+    <div>
+        <!-- <i class="fa fa-map-marker fa-2x"></i><p>Toronto,Canada</p>
+               <i class="fa fa-phone  fa-2x"></i> <p>+ 416-456-4101</p>
+               <i class="fa fa-envelope fa-2x"></i> <p>ashukoor12@gmail.com</p> -->
+        <!-- <br/>
+               <p class ="lead text-center" >Looking forward to answering your email.</p> -->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                    />
+                    <label for="name" class="">Your name</label>
+                  </div>
+                </div>
+                <!--Grid column-->
 
-          <p class ="lead">Looking forward to answering your email.</p>
+                <!--Grid column-->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                    />
+                    <label for="email" class="">Your email</label>
+                  </div>
+                </div>
 
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
 
-<div *ngIf="isLoggedIn()" class="container">
-  <div class="row">
-    <div class="col col-md-6">
-      <div class="card">
-        <h5 class="card-header alert-success">Secure</h5>
-        <div class="card-body">
-          <a routerLink="contact-list" class="btn btn-primary"><i class="fas fa-users fa-lg"></i> Contact List</a>
+              <!--Grid row-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                    />
+                    <label for="subject" class="">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea
+                      type="text"
+                      id="message"
+                      name="message"
+                      rows="2"
+                      class="form-control md-textarea "
+                    ></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+              <br />
+
+            </form>
+            <div class="text-center text-md-left">
+              <a class="btn btn-primary" routerLink="/" role="button"> Send </a
+              >&nbsp;&nbsp;
+              <a class="btn btn-secondary" routerLink="/contact" role="button">
+                Reset
+              </a>
+            </div>
+            <!-- <div class="status"></div>-->
+          </div>
+          <!--Grid column-->
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div *ngIf="isLoggedIn()" class="container">
+      <div class="row">
+        <div class="col col-md-6">
+          <div class="card "style="width: 800px; margin: center">
+            <h5 class="card-header alert-secondary">Highly Secure</h5>
+            <div class="card-body">
+              <a routerLink="contact-list" class="btn btn-info"
+                ><i class="fa-lg fas fa-portrait"></i> My Contact List</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 </div>
